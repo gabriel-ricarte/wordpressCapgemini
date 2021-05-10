@@ -90,6 +90,8 @@ do_action( 'colormag_action_after_footer' );
  */
 do_action( 'colormag_action_after' );
 
+do_action( 'colormag_footer_alterado' );
+
 wp_footer();
 ?>
 

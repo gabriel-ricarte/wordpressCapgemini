@@ -251,5 +251,116 @@ if ( ! function_exists( 'colormag_footer_copyright' ) ) :
 		echo $colormag_footer_copyright; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 
 	}
+endif;
+	if ( ! function_exists( 'colormag_footer_alterado' ) ) :
+
+		/**
+		 * Shows the footer copyright information.
+		 */
+		function colormag_footer_alterado() {
+
+			$cssFooter = "
+			section {
+				padding: 60px 0;
+			}
+			
+			section .section-title {
+				text-align: center;
+				color: #007b5e;
+				margin-bottom: 50px;
+				text-transform: uppercase;
+			}
+			#footer {
+				background: #007b5e !important;
+			}
+			#footer h5{
+				padding-left: 10px;
+				border-left: 3px solid #eeeeee;
+				padding-bottom: 6px;
+				margin-bottom: 20px;
+				color:#ffffff;
+			}
+			#footer a {
+				color: #ffffff;
+				text-decoration: none !important;
+				background-color: transparent;
+				-webkit-text-decoration-skip: objects;
+			}
+			#footer ul.social li{
+				padding: 3px 0;
+			}
+			#footer ul.social li a i {
+				margin-right: 5px;
+				font-size:25px;
+				-webkit-transition: .5s all ease;
+				-moz-transition: .5s all ease;
+				transition: .5s all ease;
+			}
+			#footer ul.social li:hover a i {
+				font-size:30px;
+				margin-top:-10px;
+			}
+			#footer ul.social li a,
+			#footer ul.quick-links li a{
+				color:#ffffff;
+			}
+			#footer ul.social li a:hover{
+				color:#eeeeee;
+			}
+			#footer ul.quick-links li{
+				padding: 3px 0;
+				-webkit-transition: .5s all ease;
+				-moz-transition: .5s all ease;
+				transition: .5s all ease;
+			}
+			#footer ul.quick-links li:hover{
+				padding: 3px 0;
+				margin-left:5px;
+				font-weight:700;
+			}
+			#footer ul.quick-links li a i{
+				margin-right: 5px;
+			}
+			#footer ul.quick-links li:hover a i {
+				font-weight: 700;
+			}
+			
+			@media (max-width:767px){
+				#footer h5 {
+				padding-left: 0;
+				border-left: transparent;
+				padding-bottom: 0px;
+				margin-bottom: 10px;
+			}
+			}";
+			$novoHtmlFooter = '
+			<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+			<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+			<style>'.$cssFooter.'</style>
+			
+			<footer>
+			<section id="footer">
+			<div class="container">
+				<div class="row text-center text-xs-center text-sm-left text-md-left">
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>Quick links</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="https://github.com/gabriel-ricarte" target="_blank"><i class="fa fa-angle-double-right"></i>Git</a></li>
+							<li><a href="https://www.capgemini.com/br-pt/our-company/" target="_blank"><i class="fa fa-angle-double-right"></i>Sobre</a></li>
+							<li><a href="https://www.capgemini.com/br-pt/our-services/" target="_blank"><i class="fa fa-angle-double-right"></i>Serviços</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>Aqui foi um footer alterado com links abrindo uma nova guia !</h5>					
+					</div>
+				</div>				
+			</div>
+		</section>
+		</footer>
+		';			
+	
+			echo $novoHtmlFooter; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+	
+		}
 
 endif;

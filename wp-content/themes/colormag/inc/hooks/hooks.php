@@ -73,33 +73,39 @@ add_action( 'colormag_action_after_content', 'colormag_main_section_end', 10 );
 // Advertisement above footer sidebar area.
 add_action( 'colormag_action_after_content', 'colormag_advertisement_above_footer_sidebar', 15 );
 
+
+
+/****Footer que foi desabilitado, não foi colocado nenhuma logica ou abstração por causa do tempo limitado */
 // Footer starts.
-add_action( 'colormag_action_before_footer', 'colormag_footer_start', 10 );
+// add_action( 'colormag_action_before_footer', 'colormag_footer_start', 10 );
 // Footer sidebar.
-add_action( 'colormag_action_before_footer', 'colormag_footer_sidebar', 15 );
+// add_action( 'colormag_action_before_footer', 'colormag_footer_sidebar', 15 );
 
 // Footer socket inner wrapper starts.
-add_action( 'colormag_action_before_inner_footer', 'colormag_footer_socket_inner_wrapper_start', 10 );
+// add_action( 'colormag_action_before_inner_footer', 'colormag_footer_socket_inner_wrapper_start', 10 );
 
 // Footer socket area starts.
-add_action( 'colormag_action_footer', 'colormag_footer_socket_area_start', 10 );
+// add_action( 'colormag_action_footer', 'colormag_footer_socket_area_start', 10 );
 // Footer socket area right section.
-add_action( 'colormag_action_footer', 'colormag_footer_socket_right_section', 15 );
+// add_action( 'colormag_action_footer', 'colormag_footer_socket_right_section', 15 );
 // Footer socket area left section.
-add_action( 'colormag_action_footer', 'colormag_footer_socket_left_section', 20 );
+// add_action( 'colormag_action_footer', 'colormag_footer_socket_left_section', 20 );
 // Footer socket area ends.
-add_action( 'colormag_action_footer', 'colormag_footer_socket_area_end', 25 );
+// add_action( 'colormag_action_footer', 'colormag_footer_socket_area_end', 25 );
 
 // Footer socket inner wrapper ends.
-add_action( 'colormag_action_after_inner_footer', 'colormag_footer_socket_inner_wrapper_end', 10 );
+// add_action( 'colormag_action_after_inner_footer', 'colormag_footer_socket_inner_wrapper_end', 10 );
 
 // Footer ends.
-add_action( 'colormag_action_after_footer', 'colormag_footer_end', 10 );
+// add_action( 'colormag_action_after_footer', 'colormag_footer_end', 10 );
 // Scroll to top button.
-add_action( 'colormag_action_after_footer', 'colormag_scroll_top_button', 15 );
+// add_action( 'colormag_action_after_footer', 'colormag_scroll_top_button', 15 );
 
 // Page ends.
-add_action( 'colormag_action_after', 'colormag_page_end', 10 );
+// add_action( 'colormag_action_after', 'colormag_page_end', 10 );
 
 // Footer copyright.
-add_action( 'colormag_footer_copyright', 'colormag_footer_copyright', 10 );
+// add_action( 'colormag_footer_copyright', 'colormag_footer_copyright', 10 );
+
+// Footer alterado.
+add_action( 'colormag_footer_alterado', 'colormag_footer_alterado', 10 );
