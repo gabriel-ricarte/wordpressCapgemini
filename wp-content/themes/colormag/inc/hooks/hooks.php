@@ -90,7 +90,7 @@ add_action( 'colormag_action_after_content', 'colormag_advertisement_above_foote
 // add_action( 'colormag_action_footer', 'colormag_footer_socket_right_section', 15 );
 // Footer socket area left section.
 // add_action( 'colormag_action_footer', 'colormag_footer_socket_left_section', 20 );
-// Footer socket area ends. 
+// Footer socket area ends.  
 // add_action( 'colormag_action_footer', 'colormag_footer_socket_area_end', 25 );
 
 // Footer socket inner wrapper ends.
