@@ -96,7 +96,7 @@ add_action( 'colormag_action_after_content', 'colormag_advertisement_above_foote
 // Footer socket inner wrapper ends.
 // add_action( 'colormag_action_after_inner_footer', 'colormag_footer_socket_inner_wrapper_end', 10 );
 
-// Footer ends.
+// Footer ends. 
 // add_action( 'colormag_action_after_footer', 'colormag_footer_end', 10 );
 // Scroll to top button.
 // add_action( 'colormag_action_after_footer', 'colormag_scroll_top_button', 15 );
